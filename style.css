@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Teko:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #ddd;
+     background: rgb(24,24,24);
+    background: linear-gradient(360deg, rgba(24,24,24,.8) 0%, rgba(62,62,62,.9) 35%, rgba(120,120,120,1) 100%), url(img/fondo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+    padding-bottom: 10 vw;
+    font-family:  'Kanit', sans-serif;
+    font-size: 100%;
+}
+
+a {
+    color: rgba(255,255,255,0.5);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
+
+div.container{
+    padding:0 5vw 5vh;
+}
+
+header, footer{
+    padding:4% 2%;
+}
+
+header svg{
+    margin-bottom: -20px;
+}
+
+header h1{
+    font-size:calc(2rem + 1vw);
+    line-height: 1.1;
+    max-width: 80%;
+    color: #f8c432;
+    font-family: 'Kanit', sans-serif;
+}
+
+header h2{
+    margin-top: 0.5rem;
+    line-height: 1.5;
+    font-family: 'Kanit', sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section article {
+    width: 16%;
+    margin:1%;
+    padding:1%;
+    background: rgba(60,60,60,0.5);
+    border-radius: 5px 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+
+
+section article h2{
+    font-size:calc(3rem + 2vw);
+    line-height: 1;
+    color: #f8c432;
+}
+
+section article.cl h2{
+    color:  #Ffffff;
+} 
+
+section article p{
+    font-size:1rem;
+    padding:0.5rem 0;
+}
+
+@media (max-width: 767.98px) {
+
+    header, footer{
+        padding:5%;
+    }
+
+    section article {
+        width: 40%;
+        margin:2%;
+        padding:3%;
+    }
+
+}
+
+main div#mapa {
+    width: 100%;
+    height: 55vh;
+    border-radius: 5px 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin:1%;
+}
+
+footer p{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+#opciones{
+    top:1rem;
+    right:1rem;
+    position: fixed;
+    padding:0.25rem 0.5rem 0.25rem 0.25rem;
+    border-radius: 5px 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
